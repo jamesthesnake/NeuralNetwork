@@ -11,8 +11,8 @@ y= np.array([[0],[1],[1],[0]])
 
 np.random.seed(1)
 
-syn0=2*np.random.random((3,4))-1
-syn1=2*np.random.random((4,1))-1
+synthetic0=2*np.random.random((3,4))-1
+synthetic1=2*np.random.random((4,1))-1
 
 
 for j in xrange(6000):
@@ -31,10 +31,10 @@ for j in xrange(6000):
 
     l1_delta= l1_error* nonlin(l1,deriv=True)
 
-    syn1 += l1.T.dot(l2_delta)
-    syn0 += l0.T.dot(l1_delta)
-    print syn1
-    print syn0
+    synthetic1 += l1.T.dot(l2_delta)
+    synthetic0 += l0.T.dot(l1_delta)
+    print synthetic1
+    print synthetic0
 
 
 
