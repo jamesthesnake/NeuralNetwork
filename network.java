@@ -12,8 +12,8 @@ public static void main(){
 
     np.random.seed(1);
 
-    long [][] syn0=2*np.random.random((3,4))-1;
-    long [][] syn1=2*np.random.random((4,1))-1;
+    long [][] syn0=2*generator(3,4))-1;
+    long [][] syn1=2*generator((4,1))-1;
     boolean deriv;
     long [][] l0,l1,l1T,l0T,l2,l2_error,synT1,synT0;
 	    for(j in xrange(6000){
