@@ -10,8 +10,7 @@ public static void main(){
     T= [[0,0,1],[0,1,1],[1,0,1],[1,1,1]]];
     y= [[0],[1],[1],[0]];
 
-    np.random.seed(1);
-
+	//check if the random works 
     long [][] syn0=2*generator(3,4))-1;
     long [][] syn1=2*generator((4,1))-1;
     boolean deriv;
